@@ -28,6 +28,7 @@ public class Main {
             "CREATE classlisting (classid INT, teacherid INT)",
             "INSERT INTO teachers (1, \"Bob\", \"A\")",
             "INSERT INTO teachers (2, \"Sally\", \"B\")",
+            "Insert INTO teachers (3,\"Roy\",\"C\")",
             "INSERT INTO classes (1, \"Economics\", \"1000\")",
             "INSERT INTO classes (2, \"CS\", \"1000\")",
             "INSERT INTO students (1, \"Alice\", \"C\")",
