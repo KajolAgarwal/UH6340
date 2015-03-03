@@ -10,7 +10,6 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * Created by Brian Holtkamp on 2/23/2015.
  * Used to provide an easy interface with the database, accepts SQL strings to handle actions
  */
 
@@ -29,7 +28,7 @@ public class DBHandler {
 
     public void handleCommand(String sqlCommand) {
         try {
-            // Parse the command
+            // Parses the command
             sql.handleMessage(sqlCommand);
 
             switch (sql.getQueryType()) {
