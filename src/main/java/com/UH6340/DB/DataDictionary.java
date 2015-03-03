@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Brian Holtkamp on 2/22/2015.
  * Consists of tuples of the table information
  *  String  String  String  String
  *  Table   Field   Type    File
@@ -84,10 +83,10 @@ public class DataDictionary {
 
                 if (dictionary.size() > 0) {
                     // Output our loaded dictionary
-                    System.out.println("Loaded the following data dictionary entries");
+                    System.out.println("Loading the following data dictionary entries");
                     printDictionary();
                 } else {
-                    System.out.println("Loaded an empty data dictionary");
+                    System.out.println("Loading an empty data dictionary");
                 }
             }
         } catch (IOException ex) {
