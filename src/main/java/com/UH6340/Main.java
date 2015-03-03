@@ -47,7 +47,7 @@ public class Main {
             "SELECT * FROM students, enrollment WHERE studentid = studentid",
             "SELECT * FROM teachers, classlisting WHERE teacherid = teacherid",
             "SELECT * FROM classes, classlisting WHERE classid = classid",
-            "INSERT INTO enrollment (\"1\", \"abcd\")"
+            "INSERT INTO enrollment (\"1\", \"abde\")"
     };
 
     public static void main(String[] args) {
