@@ -1,20 +1,26 @@
-COSC 6340 Project 1:
+COSC 6340 DataBase Systems Project 1:
 Brian Holtkamp  0875483
-Kajol Agarwal   1358284
+Kajol    1358284
 
 Contributions to the Project:
 Commit logs are on http://www.github.com/brholtkamp/UH6340/commit/master/
 
 Compilation Instructions:
+(Make sure you have Maven Installed)
 This project is built as a Maven project, so compilation can be done by:
     mvn compile
 and executed with:
     mvn exec:java
 
 Design:
-This application is built in Java with the help of the ANTLR library.  ANTLR is a language library that builds a lexer/parser based upon a given grammar.  This is utilized in order to parse the SQL commands in a standard and safe way.  The grammar definition is contained within the SQL/SQL.g file.
+This application is built in Java with the help of the ANTLR library.
+ANTLR is a language library that builds a lexer/parser based upon a given grammar.  
+This is utilized in order to parse the SQL commands in a standard and safe way. 
+The grammar definition is contained within the SQL/SQL.g file.
 
-The database functionality is done manually with ASCII text files and controlled interactions with the files.  Any edits to the dictionary are checked before commited to the file.  Any insertions into a table are checked before committed to the file.
+The database functionality is done manually with ASCII text files and controlled interactions with the files. 
+Any edits to the dictionary are checked before commited to the file. 
+Insertions made into a table are checked before committed to the file.
 
 The application mostly resides within a handful of classes:
     DataDictionary.java which handles all interaction with the Data Dictionary and creation of tables.
@@ -39,7 +45,7 @@ salary,salary,INTEGER,salary.txt,
 ...
 
 *.txt: Everything will be comma delimited, with newlines separating tuples
-field1,field2,field3,...\n
+field1,field2,field3,field4...\n
 ...
 
 Example:
