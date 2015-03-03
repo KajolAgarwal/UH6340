@@ -45,7 +45,7 @@ public class DBHandler {
                     break;
             }
         } catch (Exception ex) {
-            System.err.println("Unable to process SQL command: " + sqlCommand + "\n" + ex.getMessage() + "\n");
+            System.err.println("Unable to process SQL command: " + mysqlCommand + "\n" + ex.getMessage() + "\n");
         }
     }
 
@@ -60,13 +60,13 @@ public class DBHandler {
         LinkedList<LinkedList<String>> tuples = new LinkedList<LinkedList<String>>();
 
         // Projection operation
-        if (tables.size() == 1) {
+        if (tables.size==1) {
             File tableHandle = dictionary.getTableFileHandle(tables.get(0));
 
             // Find the indices that matter for this table and the projection
             LinkedList<Integer> indices = new LinkedList<Integer>();
             if (selections.get(0).equals("*")) {
-                for (int i = 0; i < dictionary.getTable(tables.get(0)).fields.size(); i++) {
+                for (int i=0; i < dictionary.getTable(tables.get(0)).fields.size(); i++) {
                     indices.add(i);
                 }
             } else {
@@ -88,7 +88,7 @@ public class DBHandler {
 
             // Iterate through the file
             while ((buffer = reader.readLine()) != null && buffer.length() != 0) {
-                String[] values = buffer.split(",");
+                String[] values = buffer.split(","); 
 
                 // Grab the correct values from the indices
                 LinkedList<String> tuple = new LinkedList<String>();
